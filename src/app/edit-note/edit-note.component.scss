@@ -1,0 +1,48 @@
+.edit-note-wrapper {
+    max-height: 95%;
+    padding: 35px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.button-container {
+    justify-content: space-between;
+}
+
+.button-container .aign-end {
+    margin-left: 12px;
+}
+
+@media (max-width: 767px) {
+    .button-container {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+
+
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+
+
+    }
+
+    .btn,
+    a {
+        width: 156px;
+        justify-content: center;
+
+    }
+
+    .button-container .aign-end {
+        margin-left: 0;
+    }
+
+    .btn:first-child {
+        margin-right: 0;
+    }
+}

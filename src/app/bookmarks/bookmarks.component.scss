@@ -1,0 +1,20 @@
+.bookmarks-wrapper {
+  max-height: 77%;
+  max-width: 768px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  overflow-y: auto;
+
+
+}
+
+
+.manage-btn i {
+  margin-right: 7px;
+  opacity: 0.9;
+}
+

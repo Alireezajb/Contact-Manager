@@ -1,0 +1,27 @@
+<div class="edit-todo-wrapper container has-blurred-white-bg">
+
+    <h2 class="is-bold">Edit Todo</h2>
+
+
+    <p *ngIf="!todo">Sorry Your Todo Not Found!</p>
+
+
+    <form #form="ngForm" (ngSubmit)="formSubmit(form)" *ngIf="todo">
+        
+
+        <div class="form-filed">
+            <input class="textbox" [ngModel]="todo.text" name="text" #textField="ngModel" type="text"
+                placeholder="Enter Todo Title..." required>
+
+            <ng-container *ngIf="ShowValidationErrors && textField.invalid && textField.touched">
+                <p *ngIf="textField.errors?.['required']">Please Enter Some Text</p>
+            </ng-container>
+        </div>
+        <div class="button-container">
+            <a routerLink="../" class="btn">Cancel</a>
+            <button type="submit" class="btn aign-end">Save Todo</button>
+        </div>
+
+    </form>
+
+</div>
